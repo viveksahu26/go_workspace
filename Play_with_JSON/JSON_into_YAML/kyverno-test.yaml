@@ -1,0 +1,11 @@
+name: no-localhost-service
+policies:
+- policy.yaml
+resources:
+- resource.yaml
+results:
+- kind: Service
+  policy: no-localhost-service
+  resource: my-service
+  result: skip
+  rule: no-localhost-service
